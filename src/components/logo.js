@@ -22,14 +22,17 @@ const StyledLogo = styled.div`
 `
 
 const Logo = ({ size, color }) => (
-  // <StyledLogo color={color} size={size}>
-  //   {siteShortTitle} 
-  // </StyledLogo>
-  <Img
-  className="avatar"
-  fluid={siteIcon}
-/>
+  <StyledLogo color={color} size={size}>
+    {siteShortTitle} 
+  </StyledLogo>
 )
+
+// const Logo = () => (
+//   <Img
+//   className="avatar"
+//   fluid={siteIcon}
+//   />
+// )
 
 Logo.propTypes = {
   size: PropTypes.string,
