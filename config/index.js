@@ -52,10 +52,10 @@ module.exports = {
   // There are icons available for the following platforms:
   // Medium, GitHub, LinkedIn, XING, Behance
   socialMedia: [
-    // {
-    //   name: "Linkedin",
-    //   url: "https://www.linkedin.com/in/aescaba/",
-    // },
+    {
+      name: "Linkedin",
+      url: "https://www.linkedin.com/in/aescaba/",
+    },
     // {
     //   name: "Medium",
     //   url: "https://konstantinmuenster.medium.com/",
