@@ -1,14 +1,14 @@
 module.exports = {
   //-- SITE SETTINGS -----
-  author: "@konstantinmuenster",
+  author: "@aescaba",
   siteTitle: "Amanda Escaba",
   siteShortTitle: "ae", // Used as logo text in header, footer, and splash screen
   siteDescription:
-    "A modern one-page portfolio with a clean yet expressive design.",
-  siteUrl: "https://gatsby-starter-portfolio-minimal.netlify.app/",
+    "Designer, developer, & artist based in New York.",
+  siteUrl: "https://amandaescaba.com/",
   siteLanguage: "en_US",
   siteIcon: "content/favicon.png", // Relative to gatsby-config file
-  seoTitleSuffix: "Portfolio Minimal", // SEO title syntax will be e.g. "Imprint - {seoTitleSuffix}"
+  seoTitleSuffix: "Designer, Developer, & Artist", // SEO title syntax will be e.g. "Imprint - {seoTitleSuffix}"
 
   // -- THEME SETTINGS -----
   colors: {
