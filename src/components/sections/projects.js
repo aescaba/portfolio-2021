@@ -288,7 +288,7 @@ const Projects = ({ content }) => {
                     <div className="category">
                       {frontmatter.emoji} {frontmatter.category}
                     </div>
-                    <div className="title">{frontmatter.title}</div>
+                    <div className="title"><a href="">{frontmatter.title}</a></div>
                     <MDXRenderer>{body}</MDXRenderer>
                     <div className="tags">
                       {frontmatter.tags.map(tag => (
@@ -315,6 +315,7 @@ const Projects = ({ content }) => {
                           />
                         </a>
                       )}
+
                       {frontmatter.external && (
                         <a
                           href={frontmatter.external}
