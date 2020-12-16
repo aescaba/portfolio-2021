@@ -5,6 +5,7 @@ import { MDXRenderer } from "gatsby-plugin-mdx"
 import Img from "gatsby-image"
 import VisibilitySensor from "react-visibility-sensor"
 import { motion } from "framer-motion"
+import { Link } from "gatsby"
 
 import { useOnScreen } from "../../hooks"
 import Context from "../../context"
@@ -197,6 +198,24 @@ const StyledProject = styled(motion.div)`
       height: 18.75rem;
     }
   }
+
+  .learn-more {
+    width: auto;
+    height: auto;
+    font-weight: 700;
+    border-radius: ${({ theme }) => theme.borderRadius};
+    border: 0.125rem solid ${({ theme }) => theme.colors.background};
+    background: ${({ theme }) => theme.colors.primary};
+    color: ${({ theme }) => theme.colors.background};
+    transition: 20ms ease-out;
+    font-size: 1rem;
+    padding: 0.5rem 1.5rem;
+    margin: 0;
+    &:hover {
+    border: 0.125rem solid ${({ theme }) => theme.colors.primary};
+      background: ${({ theme }) => theme.colors.background};
+      color: ${({ theme }) => theme.colors.primary};
+  }
 `
 
 const Projects = ({ content }) => {
@@ -298,6 +317,7 @@ const Projects = ({ content }) => {
                       ))}
                     </div>
                     <div className="links">
+                    <Link className="learn-more" to="">Learn More</Link>
                       {frontmatter.github && (
                         <a
                           href={frontmatter.github}
@@ -315,6 +335,7 @@ const Projects = ({ content }) => {
                           />
                         </a>
                       )}
+
                       {frontmatter.external && (
                         <a
                           href={frontmatter.external}
