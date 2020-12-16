@@ -1,8 +1,11 @@
 import React from "react"
 import PropTypes from "prop-types"
 import styled from "styled-components"
+import Img from "gatsby-image"
+
 
 import { siteShortTitle } from "../../config"
+import { siteIcon } from "../../config"
 
 const StyledLogo = styled.div`
   position: relative;
@@ -19,9 +22,13 @@ const StyledLogo = styled.div`
 `
 
 const Logo = ({ size, color }) => (
-  <StyledLogo color={color} size={size}>
-    {siteShortTitle}
-  </StyledLogo>
+  // <StyledLogo color={color} size={size}>
+  //   {siteShortTitle} 
+  // </StyledLogo>
+  <Img
+  className="avatar"
+  fluid={siteIcon}
+/>
 )
 
 Logo.propTypes = {
