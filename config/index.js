@@ -53,13 +53,13 @@ module.exports = {
   // Medium, GitHub, LinkedIn, XING, Behance
   socialMedia: [
     {
+      name: "Resume",
+      url: "https://drive.google.com/file/d/18wChM8niQglYS-Nrzeg0hlGRRO_bmSpB/view?usp=sharing",
+    },
+    {
       name: "Linkedin",
       url: "https://www.linkedin.com/in/aescaba/",
     },
-    // {
-    //   name: "Medium",
-    //   url: "https://konstantinmuenster.medium.com/",
-    // },
     // {
     //   name: "Github",
     //   url:
