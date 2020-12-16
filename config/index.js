@@ -1,8 +1,8 @@
 module.exports = {
   //-- SITE SETTINGS -----
   author: "@konstantinmuenster",
-  siteTitle: "Gatsby Starter Portfolio Minimal",
-  siteShortTitle: "Gatsby", // Used as logo text in header, footer, and splash screen
+  siteTitle: "Amanda Escaba",
+  siteShortTitle: "ae", // Used as logo text in header, footer, and splash screen
   siteDescription:
     "A modern one-page portfolio with a clean yet expressive design.",
   siteUrl: "https://gatsby-starter-portfolio-minimal.netlify.app/",
@@ -52,30 +52,30 @@ module.exports = {
   // There are icons available for the following platforms:
   // Medium, GitHub, LinkedIn, XING, Behance
   socialMedia: [
-    {
-      name: "Linkedin",
-      url: "https://www.linkedin.com/in/konstantin-muenster/",
-    },
-    {
-      name: "Medium",
-      url: "https://konstantinmuenster.medium.com/",
-    },
-    {
-      name: "Github",
-      url:
-        "https://github.com/konstantinmuenster/gatsby-starter-portfolio-minimal",
-    },
-    {
-      name: "Behance",
-      url: "https://www.behance.net/konstanmnster",
-    },
+    // {
+    //   name: "Linkedin",
+    //   url: "https://www.linkedin.com/in/aescaba/",
+    // },
+    // {
+    //   name: "Medium",
+    //   url: "https://konstantinmuenster.medium.com/",
+    // },
+    // {
+    //   name: "Github",
+    //   url:
+    //     "https://github.com/konstantinmuenster/gatsby-starter-portfolio-minimal",
+    // },
+    // {
+    //   name: "Behance",
+    //   url: "https://www.behance.net/konstanmnster",
+    // },
   ],
 
   //-- NAVIGATION SETTINGS -----
   navLinks: {
     menu: [
       {
-        name: "Articles",
+        name: "Projects",
         url: "/#articles",
       },
       {
@@ -83,7 +83,7 @@ module.exports = {
         url: "/#about",
       },
       {
-        name: "Features",
+        name: "Resume",
         url: "/#projects",
       },
     ],
