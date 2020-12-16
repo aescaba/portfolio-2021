@@ -76,7 +76,7 @@ module.exports = {
     menu: [
       {
         name: "Projects",
-        url: "/#articles",
+        url: "/#projects",
       },
       {
         name: "About Me",

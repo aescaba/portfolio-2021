@@ -112,7 +112,7 @@ const Hero = ({ content }) => {
               {frontmatter.greetings}
               {/* <motion.div
                 animate={eControls}
-                style={{ originX: 0.7, originY: 0.7 }}
+                style={{ originX: 0.2, originY: 0.2 }}
               > */}
                 <Img
                   className="emoji"
