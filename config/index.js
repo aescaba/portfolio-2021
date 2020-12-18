@@ -60,11 +60,11 @@ module.exports = {
       name: "Linkedin",
       url: "https://www.linkedin.com/in/aescaba/",
     },
-    // {
-    //   name: "Github",
-    //   url:
-    //     "https://github.com/konstantinmuenster/gatsby-starter-portfolio-minimal",
-    // },
+    {
+      name: "Github",
+      url:
+        "https://github.com/aescaba/",
+    },
     // {
     //   name: "Behance",
     //   url: "https://www.behance.net/konstanmnster",
