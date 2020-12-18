@@ -144,6 +144,7 @@ export const pageQuery = graphql`
             external
             github
             screenshot {
+              gif
               childImageSharp {
                 fluid(maxWidth: 400, quality: 90) {
                   ...GatsbyImageSharpFluid
