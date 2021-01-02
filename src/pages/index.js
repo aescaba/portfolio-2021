@@ -151,6 +151,7 @@ export const pageQuery = graphql`
               }
             }
             tags
+            url
             position
             buttonVisible
             buttonUrl

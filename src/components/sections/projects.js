@@ -272,6 +272,7 @@ const Projects = ({ content }) => {
     hidden: { opacity: 0 },
     visible: { opacity: 1 },
   }
+   
 
   return (
     <StyledSection id="projects">
@@ -317,7 +318,7 @@ const Projects = ({ content }) => {
                       ))}
                     </div>
                     <div className="links">
-                    <Link className="learn-more" to="">Learn More</Link>
+                    <Link className="learn-more" to={"projects/" + frontmatter.url}>Learn More</Link>
                       {frontmatter.github && (
                         <a
                           href={frontmatter.github}
@@ -382,7 +383,9 @@ const Projects = ({ content }) => {
           aria-label="External Link"
         >
           <Button type="button" textAlign="center" center>
+      <Link className="project-btn" to={frontmatter.url}>
             {sectionDetails.frontmatter.buttonText}
+            </Link>
           </Button>
         </motion.a>
       )}
@@ -400,5 +403,6 @@ Projects.propTypes = {
     }).isRequired
   ).isRequired,
 }
+
 
 export default Projects
