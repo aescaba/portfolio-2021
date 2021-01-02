@@ -4,11 +4,11 @@ import { graphql } from "gatsby"
 import styled from "styled-components"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 
-import GlobalStateProvider from "../context/provider"
-import ContentWrapper from "../styles/contentWrapper"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import { seoTitleSuffix } from "../../config"
+import GlobalStateProvider from "../../context/provider"
+import ContentWrapper from "../../styles/contentWrapper"
+import Layout from "../../components/layout"
+import SEO from "../../components/seo"
+import { seoTitleSuffix } from "../../../config"
 
 const StyledSection = styled.section`
   width: 100%;
@@ -40,7 +40,7 @@ const StyledContentWrapper = styled(ContentWrapper)`
 `
 
 const UniMktg = ({ data }) => {
-  const { body, frontmatter } = data.imprint.edges[0].node
+  const { body, frontmatter } = data.unimktg.edges[0].node
   const { title, seoTitle, useSeoTitleSuffix, useSplashScreen } = frontmatter
 
   const globalState = {
@@ -70,9 +70,9 @@ const UniMktg = ({ data }) => {
   )
 }
 
-Imprint.propTypes = {
+UniMktg.propTypes = {
   data: PropTypes.shape({
-    imprint: PropTypes.shape({
+    unimktg: PropTypes.shape({
       edges: PropTypes.arrayOf(
         PropTypes.shape({
           node: PropTypes.shape({
@@ -89,7 +89,7 @@ export default UniMktg
 
 export const pageQuery = graphql`
   {
-    imprint: allMdx(filter: { fileAbsolutePath: { regex: "/imprint/" } }) {
+    unimktg: allMdx(filter: { fileAbsolutePath: { regex: "/uni-mktg/" } }) {
       edges {
         node {
           body
