@@ -89,7 +89,7 @@ export default Capstone
 
 export const pageQuery = graphql`
   {
-    capstone: allMdx(filter: { fileAbsolutePath: { regex: "/capstone/" } }) {
+    capstone: allMdx(filter: { fileAbsolutePath: { regex: "/content/projects/capstone/" } }) {
       edges {
         node {
           body

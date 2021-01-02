@@ -91,7 +91,6 @@ export default UniMktg
 export const pageQuery = graphql`
   {
     unimktg: allMdx(filter: { fileAbsolutePath: { regex: "/content/projects/uni-mktg/" } }) {
-
       edges {
         node {
           body

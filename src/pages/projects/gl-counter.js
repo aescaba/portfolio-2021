@@ -89,7 +89,7 @@ export default GLCounter
 
 export const pageQuery = graphql`
   {
-    glcounter: allMdx(filter: { fileAbsolutePath: { regex: "/gl-counter/" } }) {
+    glcounter: allMdx(filter: { fileAbsolutePath: { regex: "/content/projects/gl-counter/" } }) {
       edges {
         node {
           body

@@ -89,7 +89,7 @@ export default BlueBook
 
 export const pageQuery = graphql`
   {
-    bluebook: allMdx(filter: { fileAbsolutePath: { regex: "/blue-book/" } }) {
+    bluebook: allMdx(filter: { fileAbsolutePath: { regex: "/content/projects/blue-book/" } }) {
       edges {
         node {
           body

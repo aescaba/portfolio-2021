@@ -89,7 +89,7 @@ export default Tracker
 
 export const pageQuery = graphql`
   {
-    tracker: allMdx(filter: { fileAbsolutePath: { regex: "/tracker/" } }) {
+    tracker: allMdx(filter: { fileAbsolutePath: { regex: "/content/projects/tracker/" } }) {
       edges {
         node {
           body
