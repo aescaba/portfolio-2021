@@ -26,6 +26,10 @@ const StyledContentWrapper = styled(ContentWrapper)`
     justify-content: space-between;
     align-items: center;
   }
+
+  img {
+    padding-top: 1rem;
+  }
 `
 
 // https://css-tricks.com/hamburger-menu-with-a-side-of-react-hooks-and-styled-components/
