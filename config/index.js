@@ -90,8 +90,8 @@ module.exports = {
   },
   footerLinks: [
     // {
-    //   name: "Privacy",
-    //   url: "/privacy",
+    //   name: "powered by gatsby",
+    //   url: "https://www.gatsbyjs.com/",
     // },
     // {
     //   name: "Imprint",
