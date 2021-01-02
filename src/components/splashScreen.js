@@ -71,14 +71,15 @@ const SplashScreen = () => {
           initial={{ height: "100%" }}
           animate={backdropControls}
         />
-        <Logo
+        {/* <Logo
           size="3rem"
           color={
             state.darkMode
               ? darkTheme.colors.primary
               : lightTheme.colors.background
           }
-        />
+        /> */}
+                <ImgLogo height="100rem"/>
       </div>
     </StyledSplashScreen>
   )

@@ -8,6 +8,7 @@ import Context from "../context"
 import { detectMobileAndTablet, isSSR } from "../utils/"
 import ContentWrapper from "../styles/contentWrapper"
 import Logo from "./logo"
+import ImgLogo from "./imglogo"
 import Sidebar from "./sidebar"
 import Navbar from "./navbar"
 
@@ -123,7 +124,8 @@ const Header = () => {
       <Helmet bodyAttributes={{ class: open ? "blur" : "" }} />
       <StyledContentWrapper>
         <Link to="/" aria-label="home">
-          <Logo color="primary" size="2rem" />
+          {/* <Logo color="primary" size="2rem" /> */}
+          <ImgLogo height="75rem"/>
         </Link>
         {navigation}
       </StyledContentWrapper>

@@ -5,6 +5,7 @@ import styled from "styled-components"
 import ContentWrapper from "../styles/contentWrapper"
 import Context from "../context"
 import Logo from "./logo"
+import ImgLogo from "./imglogo"
 import { lightTheme, darkTheme } from "../styles/theme"
 import { footerLinks } from "../../config"
 
@@ -52,12 +53,13 @@ const Footer = () => {
     <StyledFooter darkMode={darkMode}>
       <StyledContentWrapper>
         <Link to="/" aria-label="home">
-          <Logo
+        <ImgLogo height="50rem"/>
+          {/* <Logo
             size="1.5rem"
             color={
               darkMode ? darkTheme.colors.primary : lightTheme.colors.background
             }
-          />
+          /> */}
         </Link>
         <div className="footer-links">
           {footerLinks.map(({ name, url }, key) => (
