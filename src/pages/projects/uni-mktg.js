@@ -47,6 +47,7 @@ const UniMktg = ({ data }) => {
     isIntroDone: useSplashScreen ? false : true,
     darkMode: false,
   }
+  console.log(data.unimktg.edges[0].node)
 
   return (
     <GlobalStateProvider initialState={globalState}>
@@ -89,7 +90,8 @@ export default UniMktg
 
 export const pageQuery = graphql`
   {
-    unimktg: allMdx(filter: { fileAbsolutePath: { regex: "/uni-mktg/" } }) {
+    unimktg: allMdx(filter: { fileAbsolutePath: { regex: "/content/projects/uni-mktg/" } }) {
+
       edges {
         node {
           body
