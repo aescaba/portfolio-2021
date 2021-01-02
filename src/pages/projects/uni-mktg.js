@@ -47,7 +47,7 @@ const UniMktg = ({ data }) => {
     isIntroDone: useSplashScreen ? false : true,
     darkMode: false,
   }
-  console.log(data.unimktg.edges[0].node)
+  // console.log(data.unimktg.edges[0].node)
 
   return (
     <GlobalStateProvider initialState={globalState}>
