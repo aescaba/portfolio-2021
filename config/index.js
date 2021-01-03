@@ -98,4 +98,26 @@ module.exports = {
     //   url: "/imprint",
     // },
   ],
+  // projectLinks: [
+  //   {
+  //     name: "Blue Book",
+  //     url: "/blue-book"
+  //   },
+  //   {
+  //     name: "Capstone",
+  //     url: "/capstone"
+  //   },
+  //   {
+  //     name: "Green Line Counter",
+  //     url: "/gl-counter"
+  //   },
+  //   {
+  //     name: "Tracker",
+  //     url: "/tracker"
+  //   },
+  //   {
+  //     name: "University Marketing",
+  //     url: "/uni-mktg"
+  //   },
+  // ]
 }
