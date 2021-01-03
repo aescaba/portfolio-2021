@@ -10,6 +10,8 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { seoTitleSuffix } from "../../config"
 
+// for inline images: https://www.gatsbyjs.com/docs/working-with-images-in-markdown/#inline-images-with-gatsby-remark-images
+
 const StyledSection = styled.section`
   width: 100%;
   max-width: 62.5rem;
