@@ -13,3 +13,4 @@ Here you'll find the code for my portfolio website. I wanted one place to showca
 
 - Added "Learn More" buttons to projects
 - Changed "site short title" (text in header and footer) to icon image
+- Added pages for each individual project and linked from home
