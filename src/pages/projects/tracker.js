@@ -4,11 +4,11 @@ import { graphql } from "gatsby"
 import styled from "styled-components"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 
-import GlobalStateProvider from "../context/provider"
-import ContentWrapper from "../styles/contentWrapper"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import { seoTitleSuffix } from "../../config"
+import GlobalStateProvider from "../../context/provider"
+import ContentWrapper from "../../styles/contentWrapper"
+import Layout from "../../components/layout"
+import SEO from "../../components/seo"
+import { seoTitleSuffix } from "../../../config"
 
 const StyledSection = styled.section`
   width: 100%;
@@ -39,8 +39,8 @@ const StyledContentWrapper = styled(ContentWrapper)`
   }
 `
 
-const BlueBook = ({ data }) => {
-  const { body, frontmatter } = data.bluebook.edges[0].node
+const Tracker = ({ data }) => {
+  const { body, frontmatter } = data.tracker.edges[0].node
   const { title, seoTitle, useSeoTitleSuffix, useSplashScreen } = frontmatter
 
   const globalState = {
@@ -70,9 +70,9 @@ const BlueBook = ({ data }) => {
   )
 }
 
-BlueBook.propTypes = {
+Tracker.propTypes = {
   data: PropTypes.shape({
-    bluebook: PropTypes.shape({
+    tracker: PropTypes.shape({
       edges: PropTypes.arrayOf(
         PropTypes.shape({
           node: PropTypes.shape({
@@ -85,11 +85,11 @@ BlueBook.propTypes = {
   }).isRequired,
 }
 
-export default BlueBook
+export default Tracker
 
 export const pageQuery = graphql`
   {
-    bluebook: allMdx(filter: { fileAbsolutePath: { regex: "/content/projects/blue-book/" } }) {
+    tracker: allMdx(filter: { fileAbsolutePath: { regex: "/content/projects/tracker/" } }) {
       edges {
         node {
           body

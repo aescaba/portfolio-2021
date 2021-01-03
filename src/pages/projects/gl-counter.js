@@ -4,11 +4,13 @@ import { graphql } from "gatsby"
 import styled from "styled-components"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 
-import GlobalStateProvider from "../context/provider"
-import ContentWrapper from "../styles/contentWrapper"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import { seoTitleSuffix } from "../../config"
+import GlobalStateProvider from "../../context/provider"
+import ContentWrapper from "../../styles/contentWrapper"
+import Layout from "../../components/layout"
+import SEO from "../../components/seo"
+import { seoTitleSuffix } from "../../../config"
+
+// for inline images: https://www.gatsbyjs.com/docs/working-with-images-in-markdown/#inline-images-with-gatsby-remark-images
 
 const StyledSection = styled.section`
   width: 100%;
@@ -39,15 +41,14 @@ const StyledContentWrapper = styled(ContentWrapper)`
   }
 `
 
-const UniMktg = ({ data }) => {
-  const { body, frontmatter } = data.unimktg.edges[0].node
+const GLCounter = ({ data }) => {
+  const { body, frontmatter } = data.glcounter.edges[0].node
   const { title, seoTitle, useSeoTitleSuffix, useSplashScreen } = frontmatter
 
   const globalState = {
     isIntroDone: useSplashScreen ? false : true,
     darkMode: false,
   }
-  // console.log(data.unimktg.edges[0].node)
 
   return (
     <GlobalStateProvider initialState={globalState}>
@@ -71,9 +72,9 @@ const UniMktg = ({ data }) => {
   )
 }
 
-UniMktg.propTypes = {
+GLCounter.propTypes = {
   data: PropTypes.shape({
-    unimktg: PropTypes.shape({
+    glcounter: PropTypes.shape({
       edges: PropTypes.arrayOf(
         PropTypes.shape({
           node: PropTypes.shape({
@@ -86,11 +87,11 @@ UniMktg.propTypes = {
   }).isRequired,
 }
 
-export default UniMktg
+export default GLCounter
 
 export const pageQuery = graphql`
   {
-    unimktg: allMdx(filter: { fileAbsolutePath: { regex: "/content/projects/uni-mktg/" } }) {
+    glcounter: allMdx(filter: { fileAbsolutePath: { regex: "/content/projects/gl-counter/" } }) {
       edges {
         node {
           body
