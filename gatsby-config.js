@@ -21,6 +21,47 @@ module.exports = {
     `gatsby-plugin-robots-txt`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-sharp`,
+
+    // added from https://www.npmjs.com/package/gatsby-remark-images
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              // It's important to specify the maxWidth (in pixels) of
+              // the content container as this plugin uses this as the
+              // base for generating different widths of each image.
+              maxWidth: 1200,
+            },
+
+            
+          },
+
+          // added from https://www.gatsbyjs.com/plugins/gatsby-remark-image-attributes/
+          {
+            resolve: `gatsby-remark-image-attributes`,
+            options: {
+  
+              // ?Boolean=true
+              //   If true (the default), all CSS
+              //   property names will be recognized
+              //   as styleAttribute.
+              styleAttributes: true,
+  
+              // ?Boolean=false
+              //   If true, all attributes that
+              //   aren't styleAttributes, will be
+              //   added as data-* attributes to the
+              //   image.
+              dataAttributes: false
+            }
+          }
+        ],
+      },
+    },
+
     `gatsby-transformer-sharp`,
     `gatsby-plugin-offline`,
     `gatsby-plugin-netlify`,
@@ -32,20 +73,22 @@ module.exports = {
     //     anonymize: true,
     //   },
     // },
-    `gatsby-remark-images`,
-    {
-      resolve: `gatsby-plugin-mdx`,
-      options: {
-        gatsbyRemarkPlugins: [
-          {
-            resolve: `gatsby-remark-images`,
-            options: {
-              maxWidth: 1200,
-            },
-          },
-        ],
-      },
-    },
+
+    // `gatsby-remark-images`,
+    // {
+    //   resolve: `gatsby-plugin-mdx`,
+    //   options: {
+    //     gatsbyRemarkPlugins: [
+    //       {
+    //         resolve: `gatsby-remark-images`,
+    //         options: {
+    //           maxWidth: 1200,
+    //         },
+    //       },
+    //     ],
+    //   },
+    // },
+
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
