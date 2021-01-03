@@ -318,7 +318,7 @@ const Projects = ({ content }) => {
                       ))}
                     </div>
                     <div className="links">
-                    <Link className="learn-more" to={"projects/" + frontmatter.url}>Learn More</Link>
+                    <Link className="learn-more" to={frontmatter.url}>Learn More</Link>
                       {frontmatter.github && (
                         <a
                           href={frontmatter.github}

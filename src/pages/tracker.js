@@ -4,11 +4,11 @@ import { graphql } from "gatsby"
 import styled from "styled-components"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 
-import GlobalStateProvider from "../../context/provider"
-import ContentWrapper from "../../styles/contentWrapper"
-import Layout from "../../components/layout"
-import SEO from "../../components/seo"
-import { seoTitleSuffix } from "../../../config"
+import GlobalStateProvider from "../context/provider"
+import ContentWrapper from "../styles/contentWrapper"
+import Layout from "../components/layout"
+import SEO from "../components/seo"
+import { seoTitleSuffix } from "../../config"
 
 const StyledSection = styled.section`
   width: 100%;
@@ -39,15 +39,14 @@ const StyledContentWrapper = styled(ContentWrapper)`
   }
 `
 
-const UniMktg = ({ data }) => {
-  const { body, frontmatter } = data.unimktg.edges[0].node
+const Tracker = ({ data }) => {
+  const { body, frontmatter } = data.tracker.edges[0].node
   const { title, seoTitle, useSeoTitleSuffix, useSplashScreen } = frontmatter
 
   const globalState = {
     isIntroDone: useSplashScreen ? false : true,
     darkMode: false,
   }
-  // console.log(data.unimktg.edges[0].node)
 
   return (
     <GlobalStateProvider initialState={globalState}>
@@ -71,9 +70,9 @@ const UniMktg = ({ data }) => {
   )
 }
 
-UniMktg.propTypes = {
+Tracker.propTypes = {
   data: PropTypes.shape({
-    unimktg: PropTypes.shape({
+    tracker: PropTypes.shape({
       edges: PropTypes.arrayOf(
         PropTypes.shape({
           node: PropTypes.shape({
@@ -86,11 +85,11 @@ UniMktg.propTypes = {
   }).isRequired,
 }
 
-export default UniMktg
+export default Tracker
 
 export const pageQuery = graphql`
   {
-    unimktg: allMdx(filter: { fileAbsolutePath: { regex: "/content/projects/uni-mktg/" } }) {
+    tracker: allMdx(filter: { fileAbsolutePath: { regex: "/content/projects/tracker/" } }) {
       edges {
         node {
           body
