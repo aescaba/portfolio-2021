@@ -11,22 +11,5 @@ Here you'll find the code for my portfolio website. I wanted one place to showca
 
 ## Major Changelog
 
-To be reformatted with more descriptive text and crossreferenced with commits later
-
 - Added "Learn More" buttons to projects
-
----
-
-## Organization
-
-Outline how code is organized here
-
-```
-|-- content
-    |-- imprint
-    |-- index
-       |-- about
-       |-- contact
-       ...
-    ...
-```
+- Changed "site short title" (text in header and footer) to icon image
