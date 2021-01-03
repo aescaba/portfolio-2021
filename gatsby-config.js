@@ -40,24 +40,24 @@ module.exports = {
           },
 
           // added from https://www.gatsbyjs.com/plugins/gatsby-remark-image-attributes/
-          {
-            resolve: `gatsby-remark-image-attributes`,
-            options: {
+          // {
+          //   resolve: `gatsby-remark-image-attributes`,
+          //   options: {
   
-              // ?Boolean=true
-              //   If true (the default), all CSS
-              //   property names will be recognized
-              //   as styleAttribute.
-              styleAttributes: true,
+          //     // ?Boolean=true
+          //     //   If true (the default), all CSS
+          //     //   property names will be recognized
+          //     //   as styleAttribute.
+          //     styleAttributes: true,
   
-              // ?Boolean=false
-              //   If true, all attributes that
-              //   aren't styleAttributes, will be
-              //   added as data-* attributes to the
-              //   image.
-              dataAttributes: false
-            }
-          }
+          //     // ?Boolean=false
+          //     //   If true, all attributes that
+          //     //   aren't styleAttributes, will be
+          //     //   added as data-* attributes to the
+          //     //   image.
+          //     dataAttributes: false
+          //   }
+          // }
         ],
       },
     },
