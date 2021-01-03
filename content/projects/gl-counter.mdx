@@ -1,41 +1,33 @@
 ---
-title: "Imprint"
-seoTitle: "Imprint"
+title: "Green Line Counter"
+seoTitle: "Green Line Counter"
 useSeoTitleSuffix: true
 useSplashScreen: false
 ---
 
 import Underlining from "../../src/styles/underlining"
 
-## Information pursuant to § 5 TMG
+<Underlining highlight>HTML</Underlining> <Underlining highlight>CSS</Underlining> <Underlining highlight>Javascript</Underlining> <Underlining highlight>Angular</Underlining> <Underlining highlight>Bootstrap</Underlining> 
 
-YOURNAME<br />
-YOURSTREET<br />
-YOURCITY<br />
-YOURCOUNTRY
+## Background
 
-E-Mail Address: <Underlining highlight>YOURMAIL@DOMAIN.COM</Underlining>
+It’s challenging for MBTA employees to accurately count the number of people boarding Green Line cars. Counts were traditionally done by hand, in pairs standing outside with tally counters and clicking for everyone who got on the train followed by writing the results on paper. This method was a bit clumsy since a clipboard, pen, and clicker needed to be carried; it also drew a lot of passengers’ attention.
 
----
+During my seven-month co-op at MassDOT’s Office of Performance Management and Innovation (OPMI), my fellow co-op and I decided to **design, code, and implement a Green Line Counter web app** that would simplify the act of counting Green Line boardings.
 
-### Liability for Contents
+## Process
 
-As service providers, we are liable for own contents of these websites according to Sec. 7, paragraph 1 German Telemedia Act (TMG). However, according to Sec. 8 to 10 German Telemedia Act (TMG), service providers are not obligated to permanently monitor submitted or stored information or to search for evidences that indicate illegal activities.
+After noting what details needed to be recorded, we created a simple web page that sent all the information to a Google sheet. I took the unstyled form the other co-op made and optimized it for actual use. There were a few points I prioritized while designing:
+- Counting is a quick process and you need to pay more attention to your surroundings than your phone
+- Counters would be using their mobile phone or an iPad
 
-Legal obligations to removing information or to blocking the use of information remain unchallenged. In this case, liability is only possible at the time of knowledge about a specific violation of law. Illegal contents will be removed immediately at the time we get knowledge of them.
+*insert images*
 
----
+Along with a few coworkers, we tested the app on our own by doing a few counts on the commute to/from work, and we revised the app based on the feedback we got from those trial runs.
 
-### Liability for Links
+*Insert slides*
 
-Our offer includes links to external third party websites. We have no influence on the contents of those websites, therefore we cannot guarantee for those contents. Providers or administrators of linked websites are always responsible for their own contents.
 
-The linked websites had been checked for possible violations of law at the time of the establishment of the link. Illegal contents were not detected at the time of the linking. A permanent monitoring of the contents of linked websites cannot be imposed without reasonable indications that there has been a violation of law. Illegal links will be removed immediately at the time we get knowledge of them.
+## Final Product
 
----
-
-### Copyright
-
-Contents and compilations published on these websites by the providers are subject to German copyright laws. Reproduction, editing, distribution as well as the use of any kind outside the scope of the copyright law require a written permission of the author or originator. Downloads and copies of these websites are permitted for private use only. The commercial use of our contents without permission of the originator is prohibited.
-
-Copyright laws of third parties are respected as long as the contents on these websites do not originate from the provider. Contributions of third parties on this site are indicated as such. However, if you notice any violations of copyright law, please inform us. Such contents will be removed immediately.
+The final web app design minimized user interaction, saving details like what station you were at or if you were counting for the front/back car; it was also responsive to different screen sizes. The app ended up being used by staff to carry out Green Line counts, and I was also able to help present the app at the staff orientation and carry out a few Green Line counts myself.
