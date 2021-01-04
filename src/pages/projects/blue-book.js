@@ -27,6 +27,14 @@ const StyledSection = styled.section`
     font-size: 1rem;
     margin-bottom: 1rem;
   }
+  a {
+    color: #F4C416;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
 `
 
 const StyledContentWrapper = styled(ContentWrapper)`
