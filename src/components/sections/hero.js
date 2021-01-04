@@ -58,6 +58,10 @@ const StyledContentWrapper = styled(ContentWrapper)`
       font-size: 1.125rem;
       margin-bottom: 2rem;
     }
+    blockquote {
+      color: #F4C416;
+      font-weight:200;
+    }
   }
 `
 
