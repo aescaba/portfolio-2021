@@ -96,6 +96,13 @@ const GlobalStyle = createGlobalStyle`
         color: ${({ theme }) => theme.colors.tertiary};
         opacity: 0.1;
       }
+    
+    .img-cap {
+        padding-left: 2rem;
+        // color: ${({ theme }) => theme.colors.special};
+        font-size: 0.9rem;
+        font-style: italic;
+    }
 
 
 `
