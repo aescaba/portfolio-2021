@@ -28,7 +28,7 @@ const StyledSection = styled.section`
     margin-bottom: 1rem;
   }
   a {
-    color: #F4C416;
+    color: ${({ theme }) => theme.colors.link};
     font-weight: bold;
     font-size: 1rem;
   }
