@@ -5,8 +5,7 @@
 #### This portfolio website was built using a Gatsby starter by [Konstantin Muenster](https://github.com/konstantinmuenster). [View the documentation](https://github.com/konstantinmuenster/gatsby-starter-portfolio-minimal)
 
 
-Here you'll find the code for my portfolio website. I wanted one place to showcase all my work that I had a hand in coding and designing myself.
-
+Here you'll find the code for my portfolio website. I wanted one place to showcase all my work where I could also edit the code and design.
 ---
 
 ## Major Changelog
