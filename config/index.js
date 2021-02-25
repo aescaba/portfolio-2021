@@ -58,7 +58,7 @@ module.exports = {
   socialMedia: [
     {
       name: "Resume",
-      url: "https://drive.google.com/file/d/1end7ErFuSjTZhkn4a1xCBFX4cTFB5_Lx/view?usp=sharing",
+      url: "https://drive.google.com/file/d/1qIc0rOSuM0eoa-KQyVZZ2-glvp_vIdzE/view?usp=sharing",
     },
     {
       name: "Linkedin",
