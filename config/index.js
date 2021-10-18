@@ -61,7 +61,7 @@ module.exports = {
       url: "https://drive.google.com/file/d/1n4lYfD1M7ZoGZGENIhkVUaDjUM4hhpkh/view?usp=sharing",
     },
     {
-      name: "Linkedin",
+      name: "LinkedIn",
       url: "https://www.linkedin.com/in/aescaba/",
     },
     {
